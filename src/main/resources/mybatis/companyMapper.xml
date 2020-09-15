@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace mapper接口 必填 随便填值 防止SQL语句ID重名-->
+<mapper namespace="com.goldcard.postgresql_demo1.dao.CompanyDao">
+
+    <!--查询前5条数据-->
+    <select id="getList" resultType="com.goldcard.postgresql_demo1.entity.Company">
+          select * from company limit 5;
+    </select>
+
+</mapper>
